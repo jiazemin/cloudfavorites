@@ -56,12 +56,12 @@
                                 <small class="jiathis_style_32x32">
                                 <!-- <a class="sharing-action-button"><span class="fa fa-share-alt"></span>分享</a>
 	                            <if th:id="'likel' + ${collect.id}"  th:style="'display:' + @{(${collect.Praise} ? 'none' : 'inline-block')} + ''"> | </if> -->
-                                <a href="javascript:void(0);" class="jiathis jiathis_txt sharing-action-button" style="font-size: 100%;line-height:18px!important;padding-top:2px;">
+                                <!--<a href="javascript:void(0);" class="jiathis jiathis_txt sharing-action-button" style="font-size: 100%;line-height:18px!important;padding-top:2px;">
 
                                     <span class="fa fa-share-alt "></span>
 
                                     分享&nbsp;
-                                </a>
+                                </a>-->
                                 |
                                 <a th:id="'like' + ${collect.id}"  class="sharing-action-button" th:style="'display:' + @{(${collect.Praise} ? 'none' : 'inline-block')} + ''"    th:onclick="'changeLike(' + ${collect.id} + ');'"> <span class="fa fa-thumbs-o-up"></span>
                                 <show th:id="'likeS' + ${collect.id}"  th:text="|点赞(${collect.praiseCount})|" ></show>

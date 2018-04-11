@@ -1,26 +1,27 @@
+<!--
 <!DOCTYPE html>
 <html lang="en" xmlns:th="http://www.thymeleaf.org">
 <head th:include="lookAround :: htmlhead" th:with="title='favorites'"></head>
 <body th:onload="'lookAroundInit(\'' + ${category} + '\');'">
 
-<!--<script th:src="@{/vendor/modernizr/modernizr.custom.js}"></script>-->
-<!--<script th:src="@{/vendor/jquery/dist/jquery.js}"></script>-->
-<!--<script th:src="@{/vendor/bootstrap/dist/js/bootstrap.js}"></script>-->
-<!--<script th:src="@{/vendor/jQuery-Storage-API/jquery.storageapi.js}"></script>-->
-<!--<script th:src="@{/vendor/jquery.flexslider/jquery.flexslider.min.js}"></script>-->
-<!--<script th:src="@{/media/js/app.js}" ></script>-->
-<!--<script th:src="@{/js/comm.js}" ></script>-->
-<!--<script th:src="@{/js/lookAround.js}" ></script>-->
-<!--<script th:src="@{/js/collect.js}" ></script>-->
-<!--<script th:src="@{/index/js/freelancer.min.js}"></script>-->
+&lt;!&ndash;<script th:src="@{/vendor/modernizr/modernizr.custom.js}"></script>&ndash;&gt;
+&lt;!&ndash;<script th:src="@{/vendor/jquery/dist/jquery.js}"></script>&ndash;&gt;
+&lt;!&ndash;<script th:src="@{/vendor/bootstrap/dist/js/bootstrap.js}"></script>&ndash;&gt;
+&lt;!&ndash;<script th:src="@{/vendor/jQuery-Storage-API/jquery.storageapi.js}"></script>&ndash;&gt;
+&lt;!&ndash;<script th:src="@{/vendor/jquery.flexslider/jquery.flexslider.min.js}"></script>&ndash;&gt;
+&lt;!&ndash;<script th:src="@{/media/js/app.js}" ></script>&ndash;&gt;
+&lt;!&ndash;<script th:src="@{/js/comm.js}" ></script>&ndash;&gt;
+&lt;!&ndash;<script th:src="@{/js/lookAround.js}" ></script>&ndash;&gt;
+&lt;!&ndash;<script th:src="@{/js/collect.js}" ></script>&ndash;&gt;
+&lt;!&ndash;<script th:src="@{/index/js/freelancer.min.js}"></script>&ndash;&gt;
 
 
-<!-- Theme CSS -->
+&lt;!&ndash; Theme CSS &ndash;&gt;
 <link href="../../index/css/freelancer.min.css" rel="stylesheet" />
 <div th:replace="fragments/alert :: alert">alert</div>
 <nav id="mainNav" class="navbar navbar-default navbar-fixed-top navbar-custom">
   <div class="container">
-    <!-- Brand and toggle get grouped for better mobile display -->
+    &lt;!&ndash; Brand and toggle get grouped for better mobile display &ndash;&gt;
     <div class="navbar-header page-scroll">
       <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
         <span class="sr-only">Toggle navigation</span> Menu <i class="fa fa-bars"></i>
@@ -28,24 +29,24 @@
       <a class="navbar-brand" href="/index">云收藏</a>
     </div>
 
-    <!-- Collect the nav links, forms, and other content for toggling -->
+    &lt;!&ndash; Collect the nav links, forms, and other content for toggling &ndash;&gt;
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
       <ul class="nav navbar-nav navbar-right">
         <li class="hidden">
           <a href="#page-top"></a>
         </li>
-        <!--<li>
+        &lt;!&ndash;<li>
             <a href="/lookAround/standard/ALL">随便看看</a>
-        </li>-->
+        </li>&ndash;&gt;
         <li>
           <a href="/login" th:unless="${user != null}">登录</a>
           <a href="/" th:if="${user != null}" th:text="${user.userName}" class="userName"></a>
         </li>
       </ul>
     </div>
-    <!-- /.navbar-collapse -->
+    &lt;!&ndash; /.navbar-collapse &ndash;&gt;
   </div>
-  <!-- /.container-fluid -->
+  &lt;!&ndash; /.container-fluid &ndash;&gt;
 </nav>
 <div class="wrapper">
   <section style="margin-left:0;">
@@ -111,7 +112,7 @@
             </ul>
           </div>
           <div id="standard" th:if="${collects.size() > 0}" style="margin-top: 45px;">
-            <!--<div class="btn-group btn-xs mb pull-right" style="margin-top: -25px;">
+            &lt;!&ndash;<div class="btn-group btn-xs mb pull-right" style="margin-top: -25px;">
 
               <a th:if="${otherPeople == null}" class="btn btn-xs btn-default active"  th:href="'/lookAround/standard/' + ${category}">
 
@@ -137,7 +138,7 @@
 
               </a>
 
-            </div>-->
+            </div>&ndash;&gt;
             <ul class="timeline-alt" id="collectStandardList">
 
               <li th:each="collect,collectStat : ${collects}" >
@@ -292,7 +293,7 @@
 
                         <span class="icon-folder mr-sm"></span>
 
-                        <!--<a href="javascript:void(0);" class="normal-color-a ng-binding" th:if="${otherPeople == null}"   th:text="${collect.favoriteName}" th:onclick="'locationUrl(\'/standard/' + ${collect.favoriteId} + '/0\',\''+ ${collect.favoriteId} + '\');'" >文件加名称</a>-->
+                        &lt;!&ndash;<a href="javascript:void(0);" class="normal-color-a ng-binding" th:if="${otherPeople == null}"   th:text="${collect.favoriteName}" th:onclick="'locationUrl(\'/standard/' + ${collect.favoriteId} + '/0\',\''+ ${collect.favoriteId} + '\');'" >文件加名称</a>&ndash;&gt;
 
                         <a th:href="'/standard/' + ${collect.favoriteId} + '/' + ${collect.userId}" class="normal-color-a ng-binding"   th:text="${collect.favoriteName}">文件加名称</a>
 
@@ -493,4 +494,4 @@
    });
 </script>
 </body>
-</html>
+</html>-->
